@@ -2,21 +2,17 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterdersleri/hakkinda.dart';
-import 'package:flutterdersleri/muziklistesi.dart';
-import 'package:flutterdersleri/ograncibilgileri.dart';
-import 'package:flutterdersleri/renkler.dart';
-import 'package:flutterdersleri/dersdurumbilgileri.dart';
-import 'package:flutterdersleri/yapilacaklarlistesi.dart';
-import 'package:flutterdersleri/ograncibilgileri.dart';
-import 'package:flutterdersleri/hesapmakinesi.dart';
-import 'package:flutterdersleri/uygulamabegenme.dart';
+import 'Final/Final.dart';
+import 'vize/Vİze.dart';
+import 'vize/Vİze.dart';
+import 'Final/Final.dart';
 
 void main() {
   runApp(
     MyApp(),
   );
 }
+
 
 class MyApp extends StatelessWidget {
   @override
@@ -66,12 +62,12 @@ class Anasayfa extends StatelessWidget {
               height: 50,
               child: RaisedButton(
                   color: Colors.blue,
-                  child: Text("Öğrenci Bilgileri"),
+                  child: Text("Vize Aşamaları"),
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => OgrenciBilgileri(),
+                        builder: (context) => VizeAsamalari(),
                       ),
                     );
                   }),
@@ -84,120 +80,12 @@ class Anasayfa extends StatelessWidget {
               height: 50,
               child: RaisedButton(
                   color: Colors.blue,
-                  child: Text("Müzik Listesi"),
+                  child: Text("Final Aşamaları"),
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => MuzikListesi(),
-                      ),
-                    );
-                  }),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            SizedBox(
-              width: 200,
-              height: 50,
-              child: RaisedButton(
-                  color: Colors.blue,
-                  child: Text("Renkler"),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Renkler(),
-                      ),
-                    );
-                  }),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            SizedBox(
-              width: 200,
-              height: 50,
-              child: RaisedButton(
-                  color: Colors.blue,
-                  child: Text("Basit Hesap Makinesi"),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => HesapMakinesi(),
-                      ),
-                    );
-                  }),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            SizedBox(
-              width: 200,
-              height: 50,
-              child: RaisedButton(
-                  color: Colors.blue,
-                  child: Text("Yapılacaklar Listesi"),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => YapilacaklarListesi(),
-                      ),
-                    );
-                  }),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            SizedBox(
-              width: 200,
-              height: 50,
-              child: RaisedButton(
-                  color: Colors.blue,
-                  child: Text("Ders Durum Bilgileri"),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => TabloApp(),
-                      ),
-                    );
-                  }),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            SizedBox(
-              width: 200,
-              height: 50,
-              child: RaisedButton(
-                color: Colors.blue,
-                  child: Text("Hakkinda Sayfasi"),
-                  onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => HakkindaSayfasi(),
-                  ),
-                );
-              }),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            SizedBox(
-              width: 200,
-              height: 50,
-              child: RaisedButton(
-                  color: Colors.blue,
-                  child: Text("Uygulama Beğenme"),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => UygulamaBegenme(),
+                        builder: (context) => finalasamalari(),
                       ),
                     );
                   }),

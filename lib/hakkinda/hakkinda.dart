@@ -33,7 +33,7 @@ class HakkindaSayfasi extends StatelessWidget {
               color: Colors.yellow,
               child: Text('Bu uygulama Dr. Öğretim Üyesi Ahmet Cevahir ÇINAR tarafından yürütülen 3301456 kodlu'
                   'MOBİL PROGRAMLAMA dersi kapsamında 173006007 numaralı öğrenci, Yunus Emre Yılmaz '
-                  'tarafından 30 Nisan 2021 günü yapılmıştır.',
+                  'tarafından yapılmıştır.',
                 style: TextStyle(
                   color: Colors.black,
                   fontFamily: 'Ubuntu',
